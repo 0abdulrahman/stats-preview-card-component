@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(233, 47%, 7%);
+  color: #fff;
+}
+body main section article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: stretch;
+  flex-direction: row-reverse;
+  gap: 50px;
+  border-radius: 10px;
+  background-color: hsl(244, 38%, 16%);
+  overflow: hidden;
+  max-width: 1110px;
+}
+body main section article .img {
+  position: relative;
+  min-width: 540px;
+  min-height: 446px;
+}
+body main section article .img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: hsl(277, 64%, 61%);
+  background: url("../images/image-header-desktop.jpg") top/cover no-repeat hsl(277, 41.54%, 80.09%);
+  background-blend-mode: luminosity;
+}
+@media screen and (max-width: 1090px) {
+  body main section article .img::before {
+    background-image: url("../images/image-header-mobile.jpg");
+  }
+}
+body main section article .text {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 510px;
+}
+body main section article .text h1 {
+  font-size: 35px;
+}
+body main section article .text h1 span {
+  color: hsl(277, 64%, 61%);
+}
+body main section article .text p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 45px;
+}
+body main section article .text .states {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+body main section article .text .states div h2 {
+  font-size: 23px;
+}
+body main section article .text .states div span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+body main section article .text .states div:nth-of-type(3) h2 {
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1090px) {
+  body main section article {
+    flex-direction: column;
+    gap: 20px;
+    min-width: 330px;
+  }
+  body main section article .img {
+    min-width: auto;
+    min-height: 250px;
+  }
+  body main section article .text {
+    padding: 30px;
+    text-align: center;
+  }
+  body main section article .text h1 {
+    font-size: 27px;
+  }
+  body main section article .text .states {
+    flex-direction: column;
+  }
+  body main section article .text .states div h2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    padding: 20px;
+  }
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  font-weight: 500;
+}
+
+footer a {
+  color: hsl(277, 64%, 61%);
+}/*# sourceMappingURL=main.css.map */
